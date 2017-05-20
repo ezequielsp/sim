@@ -1,0 +1,9 @@
+services:
+    admin_user.password_resetting:
+        class: Admin\UserBundle\EventListener\PasswordResettingListener
+        arguments: ['@router']
+        tags:
+            - { name: kernel.event_subscriber }
+#    admin_user.example:
+#        class: Admin\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

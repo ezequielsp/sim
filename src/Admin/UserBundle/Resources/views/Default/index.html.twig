@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+    Hello World! User
+	
+	{% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
+{% endblock %}
+
