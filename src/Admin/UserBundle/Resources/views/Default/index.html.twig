@@ -4,6 +4,11 @@
 
 {% block body %}
     Hello World! User
+
+    <h1>{{ title }}</h1>
+    <h2>by <a href="{{ author_url }}">{{ author_name }}</a></h2>
+
+    {{ video|raw }}
 	
 	{% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
 {% endblock %}
